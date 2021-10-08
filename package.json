@@ -2,7 +2,11 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
-  "scripts": {},
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/srcServer.js",
+    "share": "lt --port 3000"
+  },
   "author": "Blaire",
   "license": "MIT",
   "dependencies": {
@@ -35,7 +39,7 @@
     "mocha": "9.1.2",
     "npm-run-all": "4.1.5",
     "numeral": "2.0.6",
-    "open": "8.2.1",
+    "open": "^8.2.1",
     "rimraf": "3.0.2",
     "style-loader": "3.3.0",
     "surge": "0.21.7",
